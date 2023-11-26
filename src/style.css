@@ -1,0 +1,143 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/raleway-medium.ttf);
+}
+
+body {
+  background-image: linear-gradient(#d9d1f8, #efedf4, #f0edef);
+  background-attachment: fixed;
+  font-family: "myFirstFont";
+  color: #121445;
+}
+
+.options {
+  font-family: myFirstFont;
+  font-size: 200%;
+  text-align: center;
+  color: #121445;
+}
+
+hr {
+  size: 20%;
+  width: 10%;
+  color: black;
+}
+h4 {
+  font-weight: bolder;
+}
+h3 {
+  text-align: center;
+  font-size: x-large;
+}
+input {
+  margin: 0%;
+  width: 0.1px;
+  height: 0.1px;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  max-height: 60%;
+  background-color: #bfcafa;
+  padding: 2%;
+  border-radius: 25px;
+  /*Below's shadow effect is sourced from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_box-shadow2 example 1 */
+  box-shadow: 5px 10px 8px #6e769b;
+}
+.container-multidisplay {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  max-height: 20%;
+  background-color: #bfcafa;
+  padding: 1%;
+  border-radius: 25px;
+  /*Below's shadow effect is sourced from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_box-shadow2 example 1 */
+  box-shadow: 5px 10px 8px #6e769b;
+}
+#fileoutput {
+  text-align: center;
+}
+.icon-container {
+  margin: auto;
+  background-color: #e0e5fd;
+  width: 90%;
+  height: 90%;
+  padding: 5%;
+  border-radius: 25px;
+  /*Below's shadow effect is sourced from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_box-shadow2 example 1 */
+  box-shadow: 5px 10px 8px #a9b6f1;
+}
+.filescroller {
+  margin: auto;
+  height: 300px;
+  width: 600px;
+  overflow: auto;
+}
+.filescroller-multi {
+  margin: auto;
+  margin-bottom: 10%;
+  height: 300px;
+  width: 600px;
+  overflow-y: scroll;
+}
+.file_icon {
+  color: #ff8040;
+}
+.file_icon:hover {
+  color: #fbbf24;
+  cursor: pointer;
+}
+
+#fileoutput {
+  text-align: left;
+  position: relative;
+}
+#info {
+  color: #5b72db;
+  border: #121445;
+}
+#process {
+  position: center;
+  bottom: 40px;
+}
+#info:hover {
+  color: #ff8040;
+  cursor: pointer;
+}
+input {
+  visibility: hidden;
+}
+.content {
+  /*https://stackoverflow.com/questions/66779223/flex-same-hight-of-container-as-two-containers-beside-vue-tailwind - helpful source for the columns*/
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-column: 2;
+  font-family: myFirstFont;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  color: #121445;
+}
+.titlename {
+  font-family: myFirstFont;
+  font-size: 550%;
+  text-align: center;
+  color: #121445;
+}
+
+span {
+  text-align: start;
+}
+label,
+input {
+  border: none;
+}

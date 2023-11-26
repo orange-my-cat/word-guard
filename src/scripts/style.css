@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+body {
+  background-image: linear-gradient(#d9d1f8, #efedf4, #f0edef);
+  background-attachment: fixed;
+  font-family: "Raleway", sans-serif;
+  color: #121445;
+}
